@@ -8,9 +8,9 @@ public class Methods { // Задание 1. Методы
     }
 
     // 4. Есть ли позитив
-//    public bool isPositive (int x) {
-//
-//    }
+    public boolean isPositive (int x) {
+        return x > 0; // число  положительное
+    }
 
     // 6. Большая буква
 //    public bool isUpperCase (char x) {
