@@ -32,10 +32,18 @@ public class Main {
 //        System.out.println("Итог: " + isPositiveResult);
 
         // 6. Большая буква
-        System.out.print("Введите символ для проверки, является ли он заглавной буквой: ");
-        char ch = scanner.next().charAt(0); // читает первый символ
-        boolean isUpper = methods.isUpperCase(ch);
-        System.out.println("Символ является заглавной буквой: " + isUpper);
+//        System.out.print("Введите символ для проверки, является ли он заглавной буквой: ");
+//        char ch = scanner.next().charAt(0); // читает первый символ
+//        boolean isUpper = methods.isUpperCase(ch);
+//        System.out.println("Символ является заглавной буквой: " + isUpper);
+
+        // 8. Делитель
+        System.out.print("Введите первое число (a): ");
+        int a = scanner.nextInt();
+        System.out.print("Введите второе число (b): ");
+        int b = scanner.nextInt();
+        boolean result = methods.isDivisor(a, b);
+        System.out.println("Результат: " + result);
 
 
         scanner.close();

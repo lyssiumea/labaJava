@@ -14,13 +14,13 @@ public class Methods { // Задание 1. Методы
 
     // 6. Большая буква
     public boolean isUpperCase (char x) {
-    return x >= 'A' && x <= 'Z';
+        return x >= 'A' && x <= 'Z';
     }
 
     // 8. Делитель
-//    public bool isDivisor (int x, int b) {
-//
-//    }
+    public boolean isDivisor (int a, int b) {
+            return (b % a == 0) || (a % b == 0);
+    }
 
     // 10. Многократный вызов
 //    public int lastNumSum (int a, int b) {
