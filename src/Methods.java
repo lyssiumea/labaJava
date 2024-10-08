@@ -19,11 +19,12 @@ public class Methods { // Задание 1. Методы
 
     // 8. Делитель
     public boolean isDivisor (int a, int b) {
-            return (b % a == 0) || (a % b == 0);
+        return (b % a == 0) || (a % b == 0);
     }
 
     // 10. Многократный вызов
-//    public int lastNumSum (int a, int b) {
-//
-//    }
+    public int lastNumSum (int a, int b) {
+        return (a % 10) + (b % 10);
+    }
+
 }

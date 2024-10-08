@@ -38,13 +38,22 @@ public class Main {
 //        System.out.println("Символ является заглавной буквой: " + isUpper);
 
         // 8. Делитель
-        System.out.print("Введите первое число (a): ");
-        int a = scanner.nextInt();
-        System.out.print("Введите второе число (b): ");
-        int b = scanner.nextInt();
-        boolean result = methods.isDivisor(a, b);
-        System.out.println("Результат: " + result);
+//        System.out.print("Введите первое число (a): ");
+//        int a = scanner.nextInt();
+//        System.out.print("Введите второе число (b): ");
+//        int b = scanner.nextInt();
+//        boolean result = methods.isDivisor(a, b);
+//        System.out.println("Результат: " + result);
 
+        //10.
+        int result = 0;
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Введите число " + (i + 1) + ": ");
+            int number = scanner.nextInt();
+            result = methods.lastNumSum(result, number);
+            System.out.println("Текущая сумма последних цифр: " + result);
+        }
+        System.out.println("Итого: " + result);
 
         scanner.close();
     }
