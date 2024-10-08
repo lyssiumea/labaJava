@@ -26,10 +26,17 @@ public class Main {
 //        System.out.println("Сумма двух последних цифр: " + result);
 
         // 4. Есть ли позитив
-        System.out.print("Введите число для проверки является ли оно положительным: ");
-        int number = scanner.nextInt();
-        boolean isPositiveResult = methods.isPositive(number);
-        System.out.println("Итог: " + isPositiveResult);
+//        System.out.print("Введите число для проверки является ли оно положительным: ");
+//        int number = scanner.nextInt();
+//        boolean isPositiveResult = methods.isPositive(number);
+//        System.out.println("Итог: " + isPositiveResult);
+
+        // 6. Большая буква
+        System.out.print("Введите символ для проверки, является ли он заглавной буквой: ");
+        char ch = scanner.next().charAt(0); // читает первый символ
+        boolean isUpper = methods.isUpperCase(ch);
+        System.out.println("Символ является заглавной буквой: " + isUpper);
+
 
         scanner.close();
     }

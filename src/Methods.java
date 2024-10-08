@@ -13,9 +13,9 @@ public class Methods { // Задание 1. Методы
     }
 
     // 6. Большая буква
-//    public bool isUpperCase (char x) {
-//
-//    }
+    public boolean isUpperCase (char x) {
+    return x >= 'A' && x <= 'Z';
+    }
 
     // 8. Делитель
 //    public bool isDivisor (int x, int b) {
